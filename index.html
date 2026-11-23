@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SPS Club Hub</title>
+  <meta name="description" content="Every CUNY SPS student club in one place.">
+  <meta name="theme-color" content="#0033A1">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Club Hub">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#home" class="brand" aria-label="SPS Club Hub home">
+      <span class="brand-mark">SPS</span>
+      <span class="brand-text">Club Hub</span>
+    </a>
+    <button id="installBtn" class="install" hidden>Install app</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#home" data-tab="home"><span class="ti">🏠</span>Home</a>
+    <a href="#clubs" data-tab="clubs"><span class="ti">🧭</span>Clubs</a>
+    <a href="#events" data-tab="events"><span class="ti">📅</span>Events</a>
+    <a href="#saved" data-tab="saved"><span class="ti">💛</span>Saved</a>
+    <a href="#about" data-tab="about"><span class="ti">ℹ️</span>About</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
